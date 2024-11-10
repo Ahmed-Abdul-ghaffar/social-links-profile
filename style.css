@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: oblique 10deg;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/static/Inter-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/static/Inter-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/static/Inter-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Inter";
+  background-color: hsl(0, 0%, 8%);
+  /* This is used to center the card vertically */
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 380px;
+  margin: 0 auto;
+  /* margin: 20px 0; */
+}
+
+.card {
+  background-color: hsl(0, 0%, 12%);
+  /* this is used to center the content inside the card horizontally */
+  display: grid;
+  place-items: center;
+
+  border-radius: 15px;
+  margin: 170px 0;
+}
+
+.card-author-image {
+  border-radius: 100px;
+  margin: 40px 0 25px 0;
+  height: 90px;
+}
+
+.card-author-name {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card-author-address {
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card-author-job {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+.card-author-connections {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  width: 275px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-style: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  font-weight: 600;
+}
+
+.card-author-connections:last-of-type {
+  margin-bottom: 35px;
+}
+
+.card-author-connections:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+
+  /* using a custom cursor */
+  cursor: url(assets/images/black-pointer-cursor.png), auto;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 330px;
+  }
+
+  .card-author-image {
+    margin: 25px 0 25px 0;
+  }
+
+  .card-author-connections {
+    width: 250px;
+  }
+
+  .card-author-connections:last-of-type {
+    margin-bottom: 20px;
+  }
+}
